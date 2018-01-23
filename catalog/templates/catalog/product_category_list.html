@@ -11,7 +11,7 @@
                                 <div class="col-lg-3 text-center">
                                     <h4><a href="{% url 'catalog:detail' product_id=product.id %}">{{product.name}}</a></h4>
                                     {% with cat_val=product.product_type.category_id%}
-                                        {% if cat_val == 3%}
+                                        {% if cat_val == 1%}
                                         <img src="{% static 'catalog/oolong_tea.jpg' %}" class="img-responsive" style="width:100%" alt="Second slide"/>
                                                                                     <p>{{product.description}}</p>
                                         <h4>Цена: {{product.price}}</h4>
