@@ -1,1 +1,1 @@
-web: gunicorn teacoffeeshop.wsgi
+web: gunicorn teacoffeeshop.wsgi --log-file -
