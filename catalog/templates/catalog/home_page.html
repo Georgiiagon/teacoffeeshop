@@ -1,0 +1,124 @@
+{% extends 'catalog/_base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div id="carousel" class="carousel slide">
+    <!--Slide IMG-->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="{% static 'catalog/mainfirstslider.jpg' %}" alt="slider-woman">
+            <div class="carousel-caption font-slider">
+
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8 col-xs-10">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'catalog/mainsecondslider.jpg' %}" alt="slider-woman"> <!--/IMG/-->
+        </div>
+        <div class="item">
+            <img src="{% static 'catalog/mainthirdslider.jpg' %}" alt="slider-woman"> <!--/IMG/-->
+        </div>
+
+  </div>
+    <!--Slide button -->
+    <a href="#carousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#carousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+    <hr\>
+
+    <div class="container w">
+    <div class="row centered">
+        <br><br>
+        <div class="col-lg-3">
+            <i class="fa fa-heart fa-3x centered"></i>
+            <h4>Вкус</h4>
+            <p>
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <i class="fa fa-laptop fa-3x"></i>
+            <h4>Преимущества</h4>
+            <p>
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <i class="fa fa-shield fa-3x"></i>
+            <h4>Гарантия</h4>
+            <p>
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <i class="fa fa-shield fa-3x"></i>
+            <h4>Натурально</h4>
+            <p>
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+            </p>
+        </div>
+        <br><br>
+    </div>
+</div>
+
+        <div class="container w">
+    <div class="row centered">
+        <br><br>
+        <div class="col-lg-3 text-center">
+            <h4>Зеленый чай</h4>
+            <img src="{% static 'catalog/tea1.jpg' %}">
+        </div>
+        <div class="col-lg-3 text-center">
+            <h4>Черный чай</h4>
+            <img src="{% static 'catalog/tea1.jpg' %}">
+        </div>
+        <div class="col-lg-3 text-center">
+            <h4>Красный чай</h4>
+           <img src="{% static 'catalog/tea1.jpg' %}">
+        </div>
+        <div class="col-lg-3 text-center">
+            <h4>Белый чай</h4>
+           <img src="{% static 'catalog/tea1.jpg' %}">
+        </div>
+        <br><br>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block bottom %}
+
+    <div  class="greenfooter">
+        <p style="margin-top: 4px;">Как к нам добраться</p>
+    <p style="font-size: 12px; margin-bottom: 0px; margin-top: -10px;">
+        <a target="_blank" href="#">Яндекс карта</a>
+    </p>
+</div>
+</div>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A79b14dfd98bfbf113729dca0bdd90d3bdf9334afb2ea459dbb08ed6c63713187&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>    <div class="greenfooter">
+    <div  class="greenfooter">
+        <p style="margin-top: 4px;">Супер чай</p>
+    <p style="font-size: 12px; margin-bottom: 0px; margin-top: -10px;">
+        <a target="_blank" href="#">Пользовательское соглашение</a>
+    </p>
+</div>
+{% endblock %}

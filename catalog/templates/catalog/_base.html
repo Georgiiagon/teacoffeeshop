@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'snippets/css.html' %}
+    <title>{% block title %}Shop{% endblock %}</title>
+
+</head>
+{% load static %}
+<body>
+
+{% include 'snippets/nav.html' %}
+
+{% block content %}
+
+{% endblock%}
+
+{% include 'snippets/js.html' %}
+
+{% block bottom %}
+
+{% endblock %}
+</body>
+</html>
